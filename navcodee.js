@@ -156,14 +156,14 @@ highlight.style.opacity = 0;
 
 let audio = document.querySelector('#audio')
 
-btnfooter.addEventListener('mouseenter', () => {
-  btnfooter.textContent = "CLICK ON THE IMAGE"
-})
+// btnfooter.addEventListener('mouseenter', () => {
+//   btnfooter.textContent = "CLICK ON THE IMAGE"
+// })
 
 
-btnfooter.addEventListener('mouseleave', () => {
-  btnfooter.textContent = "HOVER HERE"
-})
+// btnfooter.addEventListener('mouseleave', () => {
+//   btnfooter.textContent = "HOVER HERE"
+// })
 
 
 function reveal(){
