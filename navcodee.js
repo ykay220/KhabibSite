@@ -133,6 +133,7 @@ const leftImage = document.querySelector('#left-image');
 const rightImage = document.querySelector('#right-image');
 
 const btnfooter = document.querySelector('#footer-button');
+const stopLogo = document.querySelector('#stop-logo');
 
 const leftContainer = document.querySelector('.left-item');
 const middleContainer = document.querySelector('.middle-item');
@@ -155,6 +156,16 @@ highlight.style.opacity = 0;
 
 let audio = document.querySelector('#audio')
 
+btnfooter.addEventListener('mouseenter', () => {
+  btnfooter.textContent = "CLICK ON THE IMAGE"
+})
+
+
+btnfooter.addEventListener('mouseleave', () => {
+  btnfooter.textContent = "HOVER HERE"
+})
+
+
 function reveal(){
   leftContainer.animate([{ opacity: '0' }, { opacity: '1' }], 9000);
   rightContainer.animate([{ opacity: '0' }, { opacity: '1' }], 9000);
@@ -176,6 +187,10 @@ gif.style.opacity = 3;
 highlight.style.opacity = 1;
 
  }, 1000)
+
+
+btnfooter.textContent = " ";
+stopLogo.style.display = 'block';
 
  //update the flag to indicate the first click is already over
 firstClickDone = true;
@@ -256,14 +271,6 @@ rightBtn.addEventListener('click', () => {
 
 
 
-btnfooter.addEventListener('mouseenter', () => {
-  btnfooter.textContent = "CLICK ON THE IMAGE"
-})
-
-
-btnfooter.addEventListener('mouseleave', () => {
-  btnfooter.textContent = "HOVER HERE"
-})
 
 
 

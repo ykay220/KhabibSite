@@ -273,6 +273,10 @@ footer {
   display: flex;
 }
 
+#footer-button img {
+  display: none;
+}
+
 @media all and (max-width: 600px) {
   .navbar {
     flex-direction: column;
